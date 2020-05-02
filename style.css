@@ -1,0 +1,92 @@
+/* Nav */
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    height: 1000px;
+    background-attachment:fixed;
+    text-align: left;
+    
+}
+
+.jumbotron .display-4 {
+margin-top: 330px;
+font-weight: 200;
+font-size: 35px;
+margin-bottom: 32px;
+
+}
+.jumbotron .display-4 span {
+    font-weight: 500;
+    font-size: 75px;
+    
+}
+
+
+/* AllVer */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+
+/* Desktop Version */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+        height: 1000;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 70px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffd800;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    background-image: url(/Content/SiteImages/logosmall.png);
+    background-repeat: no-repeat;
+    height: 110px;
+    border-top: 3px solid #082603;
+}
+
+    .footer p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: #082603;
+        font-size: 150%;
+        font-family: 'Baskerville Old Face'
+    }
